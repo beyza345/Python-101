@@ -1,4 +1,3 @@
-print("beyza")
 #evenOrOdd
 num=int(input("pls enter a number"))
 if num%2==0:
@@ -19,4 +18,3 @@ print(factoriel)
 num=int(input("enter a numbber"))
 for i in range(1,num):
     print("*"*i)
-    
