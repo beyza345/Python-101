@@ -17,4 +17,4 @@ print(factoriel)
 #pyramidOfStars
 num=int(input("enter a numbber"))
 for i in range(1,num):
-    print("*"*i)
+    
