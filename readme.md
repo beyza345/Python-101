@@ -1,18 +1,32 @@
-# odev
+#Python Date Calculation Project
 
-Bu proje, Python kullanarak tarih hesaplama işlemleri yapmaktadır.
+#Features
+-The program asks the user to input a date in %Y-%m-%d format.
+-It calculates the day of the entered date and displays it on the screen.
+-It calculates the number of days between today and the entered date, and shows whether it's in the past or future.
+-The results are saved to a file.
 
-##  Özellikler
-- Kullanıcıdan şeklinde tarih alır.
-- Gün farkını hesaplar.
-- Sonuçları bir dosyaya kaydeder.
+#How to Run
+1- The user enters a date in %Y-%m-%d format.
+2- The day of the entered date is calculated and shown on the screen.
+3- The difference in days between today and the entered date is calculated, indicating whether it’s in the past or future.
+4- The user is asked for a file name (e.g., result.txt) to save the results.
+5- The calculated results are saved to the provided file, and a success message is displayed.
 
-##  Nasıl Çalıştırılır?
-1- Kullanıcıdan %Y-%m-%d şeklinde bir tarih alınır.
-2- Girilen tarihin günü hesaplanır ve ekrana çıktısı yazdırılır.
-3- Günümüz ile arasındaki gün farkı hesaplanır ve kaç gün öncesi/sonrası oldduğu ekrana yazdırılır.
-4- Kaydetmek için dosya adı alınır.(örn: sonuc.txt)
-5- Sonuçlar girilen dosyaya kaydedilir ve işlemin başarıyla gerçekleştiği ekrana çıktı olarak yazdırılır.
+#Example Usage
+
+## Input:
+Date (in YYYY-MM-DD format): 2025-02-03
+File name (where results will be saved): result.txt
+
+## Output
+Entered Date: 2025-02-03
+Day of Entered Date: Monday
+1 day ago.
+Results have been saved to 'result.txt'.
+
+
+
 
 
 
