@@ -11,33 +11,33 @@ haftanin_gunu = tarih_objesi.strftime("%A")
 bugun=datetime.now()
 fark=(tarih_objesi-bugun).days
 
-print(f"Girdiğiniz tarih: {tarih_objesi.strftime('%Y-%m-%d')}")
-print(f"Bu gün: {haftanin_gunu}")
+print(f"The date you entered: {tarih_objesi.strftime('%Y-%m-%d')}")
+print(f"That day: {haftanin_gunu}")
 
 if fark > 0:
-    print(f"Bu tarih {fark} gun sonra")
+    print(f"This day  {fark} day later")
 elif fark < 0:
-    print(f"Bu tarih {-fark} gun onc")
+    print(f"This day {-fark} day before")
 else:
     print("Bu tarih bugun")
     
-dosya_adi = input("Kaydetmek için dosya adini girin (orn: sonuc.txt): ") 
+dosya_adi = input("Enter a file name to save (e.g., result.txt): ") 
 
 if os.path.exists(dosya_adi):
-    secim = input("Dosya zaten var uzerine yazmak ister misiniz? (E/H): ").strip().lower()
-    if secim != 'e':  
-        print("islem iptal edildi")
+    secim = input("The file already exists. Do you want to overwrite it? (Y/N): ").strip().lower()
+    if secim != 'y':  
+        print("transaction cancelled")
         exit()
 
 with open(dosya_adi, "w") as dosya:
-    dosya.write(f"Girdiğiniz tarih: {tarih_objesi.strftime('%Y-%m-%d')}\n")
-    dosya.write(f"Haftanın günü: {haftanin_gunu}\n")
+    dosya.write(f"The daye you entered: {tarih_objesi.strftime('%Y-%m-%d')}\n")
+    dosya.write(f"Day of the week: {haftanin_gunu}\n")
     
     if fark > 0:
-        dosya.write(f"Bu tarih {fark} gun sonra.\n")
+        dosya.write(f"This date {fark} day later.\n")
     elif fark < 0:
-        dosya.write(f"Bu tarih {-fark} gun once.\n")
+        dosya.write(f"This date {-fark} day before.\n")
     else:
-        dosya.write("Bu tarih bugun!\n")
+        dosya.write("This date is today!\n")
 
-print(f"Sonuçlar {dosya_adi} dosyasına kaydedildi.")
+print(f"Results The results are saved in the {dosya_adi} file.")
