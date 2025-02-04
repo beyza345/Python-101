@@ -1,19 +1,15 @@
-##odev
+## Project Name
 
-# Proje Adı
-Ödev
+Calculation of Date Project
 
-# Projenin Amacı
-Bu proje, Python dilinde verilen bir ödevin çözümünü içerir.
-Bu ödevin amacı kullanıcının Python dilinde pratik yaparak kendini geliştirmesidir.
+## Project Purpose
 
-# Gereksinimler 
-Bu projeyi çalıştırmak için aşağıdaki gereksinimlerin karşılanması gerekir:
+This project calculates the day of the entered date and the difference between that day and the current date.
 
-## 1- Python
-- Python 3.x sürümü yüklü olmalıdır.  
-## 2- Gerekli Kütüphaneler
-Bu proje, Python’un yerleşik (built-in) kütüphanelerini kullanmaktadır.
-Ekstra bir kütüphane yüklemenize gerek yoktur.
+## Requirements
 
+To run this project, the following requirements must be met:
+
+1- Python
+Python 3.x version must be installed.
 
